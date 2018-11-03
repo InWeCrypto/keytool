@@ -1,0 +1,2 @@
+gomobile bind -target ios -o ./build/mobilesdk.framework github.com/inwecrypto/mobilesdk/neomobile github.com/inwecrypto/mobilesdk/ethmobile
+gomobile bind -target android -o ./build/mobilesdk.aar github.com/inwecrypto/mobilesdk/neomobile github.com/inwecrypto/mobilesdk/ethmobile

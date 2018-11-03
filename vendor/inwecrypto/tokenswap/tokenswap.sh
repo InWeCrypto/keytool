@@ -1,0 +1,1 @@
+go build ./cmd/tokenswap && ./tokenswap "$@" 

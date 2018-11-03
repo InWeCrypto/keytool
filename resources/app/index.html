@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/base.css"/>
+    <link rel="stylesheet" href="static/lib/astiloader/astiloader.css">
+    <link rel="stylesheet" href="static/lib/astimodaler/astimodaler.css">
+    <link rel="stylesheet" href="static/lib/astinotifier/astinotifier.css">
+    <link rel="stylesheet" href="static/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="right" id="keymnm">
+        <div class="panel" id="keystore">
+            <li>
+                <label for="message"> Keystore: </label> 
+                <textarea class="keystore" name="keystore" id="ks" ></textarea>
+            </li>
+            <li>
+                <label > Password: </label> 
+                <input  name="password" id="pd"></input>
+            </li>
+            <button name="" type="submit" id="ksubmit" value="GetKey">GetPrivateKey</button> 
+
+        </div>
+        <div class="panel" id=mnemonic>
+            <li>
+                <label for="message" > Mnemonic: </label> 
+                <textarea  id="mc" name="mc"></textarea>
+            </li>
+            <li>
+                <label><input id="en" name="lang" type="radio" value="en_US" />en_US </label>
+                <label><input id="zh" name="lang" type="radio" value="zh_CN" />zh_CN </label>
+            </li>
+            <button name="" id="mcsubmit" type="submit" value="GetKey">GetPrivateKey</button>
+        </div>
+        
+    </div>
+    <div class="left">
+        <div class="title"><span id="pk"></span></div>
+    </div>
+    <script src="static/js/index.js"></script>
+    <script src="static/lib/astiloader/astiloader.js"></script>
+    <script src="static/lib/astimodaler/astimodaler.js"></script>
+    <script src="static/lib/astinotifier/astinotifier.js"></script>
+    <script src="static/lib/chart/chart.min.js"></script>
+    <script type="text/javascript">
+        index.init();
+    </script>
+</body>
+</html>
