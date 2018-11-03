@@ -1,44 +1,18 @@
-This package is a demo of an [astilectron](https://github.com/asticode/go-astilectron) app that uses the [bootstrap](https://github.com/asticode/go-astilectron-bootstrap) and the [bundler](https://github.com/asticode/go-astilectron-bundler).
+This tool is to get the private key from the keystore or nnemonic for inwecrypto.
 
-It's also the subject of this [blog post](https://medium.com/@social_57971/how-to-add-a-gui-to-your-golang-app-in-5-easy-steps-c25c99d4d8e0).
+the tool is an desktop app, it no need to connect the internet for your scurity.
 
-![screenshot](screenshot.png)
+for desktop app we just provide windows app and mac app, not for linux
 
-# Step 1: install the demo
+you can get the compiled file from keytool/output
 
-Run the following commands:
+keytool/output/darwin-amd64 for mac
 
-    $ go get -u github.com/asticode/go-astilectron-demo/...
-    $ rm $GOPATH/src/github.com/asticode/go-astilectron-demo/bind.go
+keytool/output/windows-amd64 for windows
 
-# Step 2: install the bundler
+if you are interesing in compile the project, you can refer to the https://github.com/asticode/go-astilectron, which is a gui project for golang
 
-Run the following command:
+we aslo provide the command line tools for linxu windows and mac
 
-    $ go get -u github.com/asticode/go-astilectron-bundler/...
-    
-And don't forget to add `$GOPATH/bin` to your `$PATH`.
-    
-# Step 3: bundle the app for your current environment
+you can get from keytool/cli_tools
 
-Run the following commands:
-
-    $ cd $GOPATH/src/github.com/asticode/go-astilectron-demo
-    $ astilectron-bundler -v
-    
-# Step 4: test the app
-
-The result is in the `output/<your os>-<your arch>` folder and is waiting for you to test it!
-
-# Step 5: bundle the app for more environments
-
-To bundle the app for more environments, add an `environments` key to the bundler configuration (`bundler.json`):
-
-```json
-"environments": [
-  {"arch": "amd64", "os": "linux"},
-  {"arch": "386", "os": "windows"}
-]
-```
-
-and repeat **step 3**.
