@@ -24,7 +24,7 @@ if you are interesing in compile the project, you can refer to the https://githu
 
 command line usage:
 
-1) unzip the cli tool into your work diractory.
+1) unzip the cli tool into your work directory.
 2) show the command help:
 ./prkey_mac -h
 Usage of ./prkey_mac:
@@ -42,4 +42,5 @@ Usage of ./prkey_mac:
     * ./prkey_mac -keystore < keystore file path, eg. mykey.json > -password < keystore password>
 
 4) for mnemonic
-    * ./prkey_mac -mnemonic "your mnemonic string" -lang "en_US"  ##if your mnemonic is English or ./prkey_mac -mnemonic "your mnemonic string" -lang "zh_CN"  ## if your mnemonic is Chinese
+    * ./prkey_mac -mnemonic "your mnemonic string" -lang "en_US"  ##if your mnemonic is English 
+    * ./prkey_mac -mnemonic "your mnemonic string" -lang "zh_CN"  ## if your mnemonic is Chinese
