@@ -46,4 +46,4 @@ Usage of ./prkey_mac:
     * ./prkey_mac -mnemonic "your mnemonic string" -lang "zh_CN"  ## if your mnemonic is Chinese
 
 app usage:
-![app usage](keytool/app_usage.jpg)
+![app usage](https://github.com/InWeCrypto/keytool/blob/master/app_usage.jpg?raw=true)
