@@ -1,18 +1,45 @@
-This tool is to get the private key from the keystore or nnemonic for inwecrypto.
+# Inwecrypto keytool
 
-the tool is an desktop app, it no need to connect the internet for your scurity.
+This tool is to get the private key from the keystore or mnemonic for inwecrypto.
 
-for desktop app we just provide windows app and mac app, not for linux
+the tool is an desktop app, it no need to connect the internet， for your scurity you can shutdown your network when using the tool.
 
-you can get the compiled file from keytool/output
+we provide windows and mac desktop apps, but we aslo provide the command line tools for linxu windows and mac.
 
-keytool/output/darwin-amd64 for mac
+you can get the compiled file from https://github.com/InWeCrypto/keytool/releases
 
-keytool/output/windows-amd64 for windows
+```
+mac-gui-amd64.zip ---- mac app
+windows-gui-386.zip ---- win32 app
+windows-gui-amd64.zip ---- win64 app
+
+prkeycli_linux_64.zip  ---- linux command line 
+prkeycli_mac.zip ---- mac command line 
+prkeycli_win_64.exe.zip ---- win64 command line
+```
 
 if you are interesing in compile the project, you can refer to the https://github.com/asticode/go-astilectron, which is a gui project for golang
 
-we aslo provide the command line tools for linxu windows and mac
 
-you can get from keytool/cli_tools
 
+command line usage:
+
+1) unzip the cli tool into your work diractory.
+2) show the command help:
+./prkey_mac -h
+Usage of ./prkey_mac:
+  -keystore string
+    	Keystore file path
+  -lang string
+    	Mnemonic language en_US or zh_CN (default "en_US")
+  -mnemonic string
+    	Mnemonic string
+  -password string
+    	Keystore password
+
+3) for keystore
+    * get the keystore information, write it to the file, eg. mykey.json
+    * ./prkey_mac -keystore < keystore file path, eg. mykey.json > -password < keystore password>
+
+4) for mnemonic
+    * ./prkey_mac -mnemonic "your mnemonic string" -lang "en_US"  ##if your mnemonic is English or ./prkey_mac -mnemonic "your mnemonic string" -lang "zh_CN"  ## if your mnemonic is Chinese
