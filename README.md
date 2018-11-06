@@ -46,4 +46,9 @@ Usage of ./prkey_mac:
     * ./prkey_mac -mnemonic "your mnemonic string" -lang "zh_CN"  ## if your mnemonic is Chinese
 
 app usage:
+1) upzip the app file, the apps no need to install, just double-click the file,it can work. 
+2) for mac maybe you should set the security setting.
+![mac setting](https://github.com/InWeCrypto/keytool/blob/master/mac_security.jpg?raw=true)
+3) for windows maybe you should check if the anti-virus software， besure it can not stop app.
+4) 
 ![app usage](https://github.com/InWeCrypto/keytool/blob/master/app_usage.jpg?raw=true)
