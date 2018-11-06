@@ -32,7 +32,8 @@ html, body {
 .right li{
 	padding:12px; 
 	border-bottom:1px solid #eee;
-	position:relative;
+    position:relative;
+    list-style:none;  
 } 
 .right {
     float: right;
@@ -40,6 +41,12 @@ html, body {
     overflow: auto;
     padding: 15px;
     width: 60%;
+}
+.right .block{
+    display: block;
+}
+#ksubmit{
+    margin-left: 12px;
 }
 .right label {
 	width:150px;
@@ -54,8 +61,10 @@ html, body {
 
 .panel input {
 	height:20px; 
-	width:220px; 
-	padding:5px 8px;
+	/* width:150px;  */
+    /* padding:5px 8px; */
+    margin: 0;
+    margin-right: 20px;
 }
 .title {
     font-size: 1.5em;
