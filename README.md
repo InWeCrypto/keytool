@@ -44,3 +44,6 @@ Usage of ./prkey_mac:
 4) for mnemonic
     * ./prkey_mac -mnemonic "your mnemonic string" -lang "en_US"  ##if your mnemonic is English 
     * ./prkey_mac -mnemonic "your mnemonic string" -lang "zh_CN"  ## if your mnemonic is Chinese
+
+app usage:
+![app usage](keytool/app_usage.jpg)
